@@ -1,10 +1,7 @@
 function onLoad() {
     includeHTML();
-    const links = document.querySelectorAll('.navlink');
-    const thisLink = location.href.split("/").slice(-1).toString().replace(".html", "").split("?")[0];
-  console.log (links, thisLink)
-  links.forEach(link => {
-    link.classList.remove('activepage');
-  });
-  currentID.classList.add("activepage");
+    var activepagename = document.getElementById("activepagename");
+    const thisLink = document.title;
+  console.log(activepagename, thisLink)
+    activepagename.innerHTML = ">" + thisLink;
 }
