@@ -1,0 +1,101 @@
+.project {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    .project-title {
+        font-family: "Sligoil", monospace;
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+    .project-description, .project-links, .project-list {
+        font-family: "Poppins";
+        font-weight: 400;
+        padding: 0 1rem;
+    }
+    .project-subtitle {
+        font-family: "Sligoil", monospace;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem !important;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+
+    .project-credits {
+        margin-bottom: 1rem;
+    }
+
+    
+
+    .project-gallery {
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, 50vw);
+        // justify-content: center;
+        // .project-image img {
+        //     width: 50vw;
+        // }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: fit-content;
+        .project-image{
+            img {
+                width: 50vw;
+                display: block;
+            } 
+        }
+    }
+
+    .project-list {
+        margin-left: 1rem;
+        list-style: none;
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .project-links {
+        margin-bottom: 0.5rem;
+    }
+
+    a:hover {
+        color: #696969;
+    }
+}
+
+.project>* {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1025px) {
+    .project {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        .project-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .desktop-left-column {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            
+            .desktop-right-column {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                .project-subtitle {
+                    margin-top: 0;
+                }
+            }
+        }
+        
+
+        .project-gallery {
+            .project-image {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
