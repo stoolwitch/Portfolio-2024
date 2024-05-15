@@ -1,7 +1,8 @@
 function onLoad() {
-    includeHTML();
-    var activepagename = document.getElementById("activepagename");
-    const thisLink = document.title;
-  console.log(activepagename, thisLink)
-    activepagename.innerHTML = ">" + thisLink;
+  includeHTML();
+  setTimeout(() => { navBar(); }, 10);
+  var activepagename = document.getElementById("activepagename");
+  const currentPage = document.title;
+  console.log(activepagename, currentPage)
+  activepagename.innerHTML = ">" + currentPage;
 }
