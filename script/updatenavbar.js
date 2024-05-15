@@ -7,4 +7,8 @@ function navBar() {
         link.classList.remove('activepage');
     });
     currentID.classList.add("activepage");
+    var activepagename = document.getElementById("activepagename");
+    const currentPage = document.title;
+    console.log(activepagename, currentPage)
+    activepagename.innerHTML = ">" + currentPage;
 }

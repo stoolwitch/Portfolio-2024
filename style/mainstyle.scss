@@ -78,7 +78,7 @@ header {
         top: -100%;
     }
 
-    #highlights {
+    #index {
         background-color: var(--pink);
     }
 
@@ -153,17 +153,17 @@ header {
             justify-content: space-between;
         }
     
-        #highlights {
+        #index {
             background-color: rgba(0, 0, 0, 0);
             display: inline-block;
             position: relative;
             z-index: 10;
         }
-        #highlights.activepage {
+        #index.activepage {
             background-color: var(--pink);
         }
 
-        #highlights::after {
+        #index::after {
             content: '';
             position: absolute;
             width: 100%;
@@ -177,7 +177,7 @@ header {
             z-index: -1;
         }
 
-        #highlights:hover::after {
+        #index:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }
