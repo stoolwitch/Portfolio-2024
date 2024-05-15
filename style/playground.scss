@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: fit-content;
     .pg-project {
         z-index: 20;
         margin: 0;
@@ -31,11 +30,10 @@
 
 @media screen and (min-width: 1025px) {
     .pg-masonry {
-        height: 100vh;
         align-content: space-evenly;
         row-gap: 2rem;
         .pg-project {
-            width: 20rem;
+            width: min(25%, 20rem);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.054);
             transition: 0.1s ease-in-out;
         }
