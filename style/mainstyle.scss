@@ -36,6 +36,13 @@ body {
     // background-color: var(--highlights);
 }
 
+.pixelart {
+    image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
 header {
     width: 100vw;
     height: auto;
@@ -112,8 +119,6 @@ header {
 
 #main {
     width: 100vw;
-    height: 200px;
-    z-index: -1;
 }
 
 @media screen and (min-width: 1025px) {
@@ -134,12 +139,17 @@ header {
         // overflow: hidden;
     }
 
+    .empty {
+        width: clamp(400px, 30vw, 600px);
+        height: 100vh;
+    }
+
     header {
         width: clamp(400px, 30vw, 600px);
         height: 100vh;
         box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.054);
         position: fixed;
-        #mobileMenu {
+            #mobileMenu {
             display: none;
         }
 
@@ -252,8 +262,6 @@ header {
     }
 
     #main {
-        max-width: 70vw;
-        height: auto;
-        margin-left:clamp(400px, 30vw, 600px);
+        width: 70vw;
     }
 }
