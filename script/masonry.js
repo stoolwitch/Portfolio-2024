@@ -3,9 +3,9 @@ function masonry() {
     var bigsize = window.matchMedia("(min-width: 2000px)");
     var masonryBox = document.getElementById('playgroundProjects');
     var masonryHeight = masonryBox.clientHeight;
-    var halfMasonry = masonryHeight/1.7;
-    var thirdMasonry = masonryHeight/2.5;
-    var quarterMasonry = masonryHeight/3.2;
+    var halfMasonry = masonryHeight/1.8;
+    var thirdMasonry = masonryHeight/2.7;
+    var quarterMasonry = masonryHeight/3.4;
     if (bigsize.matches){
         console.log("quarter");
         masonryBox.style.height = quarterMasonry + "px";
