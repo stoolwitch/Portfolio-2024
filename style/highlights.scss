@@ -3,16 +3,21 @@
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
+
     .project-title {
         font-family: "Sligoil", monospace;
         font-size: 2rem;
         padding: 0 1rem;
     }
-    .project-description, .project-links, .project-list {
+
+    .project-description,
+    .project-links,
+    .project-list {
         font-family: "Poppins";
         font-weight: 400;
         padding: 0 1rem;
     }
+
     .project-subtitle {
         font-family: "Sligoil", monospace;
         font-size: 1.5rem;
@@ -25,7 +30,7 @@
         margin-bottom: 1rem;
     }
 
-    
+
 
     .project-gallery {
         // display: grid;
@@ -38,20 +43,19 @@
         flex-direction: column;
         flex-wrap: wrap;
         height: fit-content;
-        .project-image{
+
+        .project-image {
             img {
                 width: 50vw;
                 display: block;
-            } 
-        }
-        .project-video {
-            width: 50vw;
+            }
         }
     }
 
     .project-list {
         margin-left: 1rem;
         list-style: none;
+
         li {
             margin-bottom: 0.5rem;
         }
@@ -70,38 +74,69 @@
     margin-bottom: 1rem;
 }
 
+#generiqueBox {
+    width: 50vw;
+    position: relative;
+    img {
+        position: absolute;
+            object-fit: cover;
+            
+            width: 100%;
+            height: 100%;
+            
+        animation-name: generiquedefilant;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes generiquedefilant {
+    from {object-position: top;}
+    to {object-position: bottom;}
+  }
+
 @media screen and (min-width: 1025px) {
     .project {
         margin-left: 2rem;
         margin-right: 2rem;
+
         .project-text {
             display: grid;
             grid-template-columns: 1fr 1fr;
+
             .desktop-left-column {
                 grid-column-start: 1;
                 grid-column-end: 2;
             }
-            
+
             .desktop-right-column {
                 grid-column-start: 2;
                 grid-column-end: 3;
+
                 .project-subtitle {
                     margin-top: 0;
                 }
             }
         }
-        
+
 
         .project-gallery {
             .project-image {
                 width: 50%;
+
                 img {
                     width: 100%;
                 }
             }
+
             .project-video {
                 width: 50%;
             }
         }
+    }
+
+    #generiqueBox {
+        width: 50%;
     }
 }

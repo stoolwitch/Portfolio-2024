@@ -153,11 +153,16 @@
                             alt="">
                     </picture>
 
-                    <video class="project-video" autoplay loop muted>
-                        <source src="media/projects/lotus/lotus_generique_av1_1000mbps.webm" type="video/webm" />
-                        <source src="media/projects/lotus/lotus_generique_hevc_2000mbps.mp4" type="video/mp4" />
-                        <source src="media/projects/lotus/lotus_generique_h264_3000mbps.mp4" type="video/mp4" />
-                      </video>
+                    <div class="project-image" loading="lazy" id="generiqueBox">
+                        <picture>
+                            <source srcset="media/projects/lotus/lotus_fullgen.avif"
+                                type="image/avif">
+                            <source srcset="media/projects/lotus/lotus_fullgen.webp"
+                                type=" image/webp">
+                            <img src="media/projects/lotus/lotus_fullgen.jpg"
+                                alt="">
+                        </picture>
+                    </div>
 
                     <picture class="project-image" loading="lazy">
                         <source srcset="media/projects/lotus/lotus_avantpremiere.avif"
