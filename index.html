@@ -12,7 +12,7 @@
     <title class="lang-title">sélection</title>
 </head>
 
-<body onload="onLoad()">
+<body onload="onLoadIndex()">
 
         <header w3-include-html="navbar.html">
 
@@ -152,28 +152,27 @@
                         <img src="media/projects/miniatures/lotus_affiche.jpg"
                             alt="">
                     </picture>
+
+                    <video class="project-video" autoplay loop muted>
+                        <source src="media/projects/lotus/lotus_generique_av1_1000mbps.webm" type="video/webm" />
+                        <source src="media/projects/lotus/lotus_generique_hevc_2000mbps.mp4" type="video/mp4" />
+                        <source src="media/projects/lotus/lotus_generique_h264_3000mbps.mp4" type="video/mp4" />
+                      </video>
+
                     <picture class="project-image" loading="lazy">
-                        <source srcset="media/projects/conceptcollection/photo-concept-collection-2.avif"
+                        <source srcset="media/projects/lotus/lotus_avantpremiere.avif"
                             type="image/avif">
-                        <source srcset="media/projects/conceptcollection/photo-concept-collection-2.webp"
+                        <source srcset="media/projects/lotus/lotus_avantpremiere.webp"
                             type=" image/webp">
-                        <img src="media/projects/conceptcollection/photo-concept-collection-2.jpg"
+                        <img src="media/projects/lotus/lotus_avantpremiere.jpg"
                             alt="">
                     </picture>
                     <picture class="project-image" loading="lazy">
-                        <source srcset="media/projects/conceptcollection/photo-concept-collection-3.avif"
+                        <source srcset="media/projects/lotus/lotus_insta.avif"
                             type="image/avif">
-                        <source srcset="media/projects/conceptcollection/photo-concept-collection-3.webp"
+                        <source srcset="media/projects/lotus/lotus_insta.webp"
                             type=" image/webp">
-                        <img src="media/projects/conceptcollection/photo-concept-collection-3.jpg"
-                            alt="">
-                    </picture>
-                    <picture class="project-image" loading="lazy">
-                        <source srcset="media/projects/conceptcollection/photo-concept-collection-4.avif"
-                            type="image/avif">
-                        <source srcset="media/projects/conceptcollection/photo-concept-collection-4.webp"
-                            type=" image/webp">
-                        <img src="media/projects/conceptcollection/photo-concept-collection-4.jpg"
+                        <img src="media/projects/lotus/lotus_insta.jpg"
                             alt="">
                     </picture>
                 </div>
@@ -181,7 +180,7 @@
                 <h2 class="project-title">LOTUS</h2>
                 <div class="project-text">
                     <div class="desktop-left-column">
-                        <p class="project-description">Long métrage réalisé par Lionel Manfredi dans le cadre de son travail de maturité. J'étais responsable de communication pour l'avant-première, designer de titres et générique, photographe de plateau et aide à la prise de son.</p>
+                        <p class="project-description">Long métrage réalisé par Lionel Manfredi dans le cadre de son travail de maturité. J'étais responsable de communication pour l'avant-première, designer de titres et générique, photographe de plateau & événement et aide à la prise de son.</p>
                         <h3 class="project-subtitle hide-when-mobile">Liens</h3>
                         <a href="https://www.instagram.com/lotus_couleurs/" target="_blank"
                             class="project-links hide-when-mobile">> Compte instagram</a>
@@ -205,12 +204,13 @@
     <script src="script/init.js"></script>
     <script src="script/jquery.min.js"></script>
     <script src="script/hamburger.js"></script>
-    <script src="script/mail.js"></script>
+    <!-- <script src="script/mail.js"></script> -->
     <script src="script/addhtml.js"></script>
     <script src="script/updatenavbar.js"></script>
     <script src="script/lang.js"></script>
-    <script src="script/randomsorting.js"></script>
+    <!-- <script src="script/randomsorting.js"></script> -->
     <script src="script/highlightimages.js"></script>
+    <script>window.onresize = highlightsize;</script>
 </body>
 
 </html>

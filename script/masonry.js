@@ -2,6 +2,7 @@ function masonry() {
     var midsize = window.matchMedia("(min-width: 1025px)");
     var bigsize = window.matchMedia("(min-width: 2000px)");
     var masonryBox = document.getElementById('playgroundProjects');
+    masonryBox.style.height = "fit-content";
     var masonryHeight = masonryBox.clientHeight;
     var halfMasonry = masonryHeight/1.8;
     var thirdMasonry = masonryHeight/2.7;

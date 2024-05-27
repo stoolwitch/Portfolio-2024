@@ -12,7 +12,7 @@
     <title class="lang-title">place de jeu</title>
 </head>
 
-<body onload="onLoad()">
+<body onload="onLoadPlay()">
 
 
         <header w3-include-html="navbar.html">
@@ -245,12 +245,13 @@
     <script src="script/init.js"></script>
     <script src="script/jquery.min.js"></script>
     <script src="script/hamburger.js"></script>
-    <script src="script/mail.js"></script>
+    <!-- <script src="script/mail.js"></script> -->
     <script src="script/addhtml.js"></script>
     <script src="script/updatenavbar.js"></script>
     <script src="script/lang.js"></script>
     <script src="script/randomsorting.js"></script>
     <script src="script/masonry.js"></script>
+    <script>window.onresize = masonry;</script>
 </body>
 
 </html>

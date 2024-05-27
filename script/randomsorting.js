@@ -1,8 +1,5 @@
 function randomSorting() {
-    'use strict';
-    // the row has ID="shuffle"
     const shuffled = document.querySelector('#playgroundProjects'),
-        // the columns has class="random"
         myShuffle = document.querySelectorAll('.pg-project'),
         length = myShuffle.length;
     myShuffle.forEach(() => {

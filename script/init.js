@@ -1,6 +1,15 @@
-function onLoad() {
+function onLoadPlay() {
   includeHTML();
   randomSorting();
-  setLang();
   masonry();
+}
+
+function onLoadIndex() {
+  includeHTML();
+  highlightsize();
+}
+
+function onLoadMe() {
+  includeHTML();
+  replaceMail();
 }

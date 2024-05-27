@@ -4,10 +4,11 @@
     font-weight: 400;
 }
 
-.pg-masonry {
+#playgroundProjects {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    height: 100px;
     .pg-project {
         // z-index: 20;
         margin: 0;
@@ -29,7 +30,7 @@
 
 
 @media screen and (min-width: 1025px) {
-    .pg-masonry {
+    #playgroundProjects {
         align-content: space-evenly;
         row-gap: 2rem;
         .pg-project {
