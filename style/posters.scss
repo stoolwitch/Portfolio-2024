@@ -1,0 +1,51 @@
+#posters-explanation {
+    margin: 10vw;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+#posters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .poster {
+        // z-index: 20;
+        margin: 10vw;
+        padding: 0;
+        width: 80vw;
+        height: fit-content;
+        a {
+            width: 100%;
+            .posters-image {
+                img {
+                    vertical-align: bottom;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1025px) {
+    #posters-explanation {
+    margin: 2rem;
+}
+    #posters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .poster {
+            margin: 2rem;
+            width: min(40%, 50rem);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.054);
+            transition: 0.1s ease-in-out;
+        }
+        .poster:hover {
+            z-index: 25;
+            transform: scale(1.05);
+            transition: 0.1s ease-in-out;
+        }
+    }
+}

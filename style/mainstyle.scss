@@ -5,6 +5,8 @@
     --highlights: #FFF2FF;
     --turquoise: #B5FFFC;
     --playground: #EDFFFE;
+    --purple: #ddc2ff;
+    --posters: #f2e8ff;
 }
 
 * {
@@ -93,6 +95,10 @@ header {
 
     #index {
         background-color: var(--pink);
+    }
+
+    #posters {
+        background-color: var(--purple);
     }
 
     #aboutme {
@@ -194,6 +200,35 @@ header {
         }
 
         #index:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        #posters {
+            background-color: rgba(0, 0, 0, 0);
+            display: inline-block;
+            position: relative;
+            z-index: 10;
+        }
+        #posters.activepage {
+            background-color: var(--purple);
+        }
+
+        #posters::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: var(--purple);
+            transform-origin: bottom left;
+            transition: transform 0.25s ease-out;
+            z-index: -1;
+        }
+
+        #posters:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }
